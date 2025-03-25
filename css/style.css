@@ -51,7 +51,6 @@ body {
   display: flex;
   flex-direction: column;
   background: #f3e5d7;
-  padding: 124px 0;
 }
 
 main {
@@ -63,10 +62,31 @@ a {
   display: inline-block;
 }
 
-/* ul,
+ul,
 ol {
-  list-style: none;
-} */
+  /* list-style: none; */
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+li::marker {
+  color: #854632;
+  margin-left: 16px;
+}
+li {
+  color: var(--Wenge-Brown, #5f564d);
+  font-size: 16px;
+  line-height: 150%;
+}
+li strong {
+  font-weight: 700;
+  line-height: 150%;
+}
+
+img {
+  display: flex;
+}
 
 .container {
   width: 100%;
@@ -75,4 +95,95 @@ ol {
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 124px;
+  margin-bottom: 124px;
+}
+
+.site-title {
+  color: var(--Brandy-Red, #854632);
+  font-family: "Young Serif";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 24px;
+}
+
+/* MAIN STYLES */
+
+/* resipe */
+.resipe-title {
+  margin-top: 8px;
+  color: #312e2c;
+  font-family: "Young Serif";
+  font-size: 40px;
+  line-height: 100%;
+  margin-bottom: 24px;
+}
+.resipe-desc {
+  color: var(--Wenge-Brown, #5f564d);
+  font-size: 16px;
+  line-height: 150%;
+}
+
+/* preparation */
+.preparation-container {
+  border-radius: 12px;
+  background: var(--Snow, #fff7fb);
+  padding: 28px;
+}
+.preparation-title {
+  color: #7a284e;
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 20px */
+  margin-bottom: 16px;
+}
+
+/* ingredients */
+.ingredients-container {
+}
+.ingredeints-list {
+}
+.ingredients-item {
+  color: var(--Wenge-Brown, #5f564d);
+  font-size: 16px;
+  line-height: 150%;
+}
+
+/* nutrition */
+.nutrition-desc {
+  color: var(--Wenge-Brown, #5f564d);
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.nutrition-table {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.nutrition-table-item {
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  align-items: center;
+}
+.nutrition-table-key {
+  width: 50%;
+  font-size: 16px;
+  color: #5f564d;
+}
+.nutrition-table-value {
+  width: 50%;
+  color: var(--Brandy-Red, #854632);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
 }
